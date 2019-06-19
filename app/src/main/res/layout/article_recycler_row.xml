@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_circle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/image_next"
+        android:layout_toRightOf="@+id/image_circle"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Name"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/image_next"
+        android:layout_toRightOf="@+id/image_circle"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Name"
+        android:textColor="@color/colorLightDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_author"
+        android:layout_toLeftOf="@+id/image_next"
+        android:drawableLeft="@drawable/ic_insert_black_24dp"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:maxLines="1"
+        android:text="date"
+        android:textColor="@color/colorLightDark"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/image_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+</RelativeLayout>
